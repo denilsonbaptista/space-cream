@@ -80,11 +80,23 @@ main p {
   position: relative;
 }
 
-main img {
+main .card img {
   max-width: 32rem;
+
+  animation: dowtop 800ms ease-in-out;
+
+  transition: all 200ms;
+
+  filter: brightness(0.8);
 }
 
-main h2 {
+main .card img:hover {
+  transform: scale(1.1);
+
+  filter: initial;
+}
+
+main .card h2 {
   font-family: var(--ff-heading);
   font-weight: 400;
   font-size: var(--fs-body);
@@ -101,4 +113,30 @@ main h2 {
 
   padding: 0 2.4rem;
   border-radius: 2rem;
+
+  animation: topdow 800ms 350ms backwards ease-in-out;
+}
+
+@keyframes topdow {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes dowtop {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
