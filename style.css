@@ -8,6 +8,7 @@
   /* Fonts */
   --ff-heading: "Staatliches", cursive;
   --ff-texting: "Palanquin", sans-serif;
+  --ff-footer: "Open Sans", sans-serif;
 
   font-size: 62.5%;
   --fs-body: 2rem;
@@ -115,6 +116,23 @@ main .card h2 {
   border-radius: 2rem;
 
   animation: topdow 800ms 350ms backwards ease-in-out;
+}
+
+footer {
+  font-family: var(--ff-footer);
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+
+  color: var(--fc-heading-secundary);
+
+  margin: 3rem 0;
+}
+
+footer a {
+  font-weight: 700;
+
+  text-decoration: none;
+  color: var(--fc-heading-secundary);
 }
 
 @keyframes topdow {
