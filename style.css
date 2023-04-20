@@ -65,8 +65,9 @@ main {
   margin: 0 auto;
 }
 
-main p {
-  margin: 1.4rem 0 6rem;
+.information p {
+  margin: 1.4rem auto 6rem;
+  max-width: 32rem;
   line-height: 2.4rem;
 
   color: var(--fc-texting-primary);
@@ -156,5 +157,94 @@ footer a {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (min-width: 800px) {
+  .page {
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 90% 10%;
+    grid-template-areas:
+      "A B"
+      "A C";
+  }
+
+  .information {
+    background-color: var(--bg-secundary);
+
+    padding: 3.2rem 0 3rem;
+
+    grid-area: A;
+
+    min-height: 100vh;
+  }
+
+  header img {
+    max-width: 22rem;
+  }
+
+  header h1 {
+    font-size: 4.8rem;
+    line-height: 3.4rem;
+
+    padding: 2.2rem 0;
+  }
+
+  .information p {
+    max-width: 40rem;
+    padding: 2rem;
+
+    font-size: 2rem;
+    line-height: 2.5rem;
+
+    color: var(--fc-heading-primary);
+  }
+
+  main {
+    grid-area: B;
+
+    max-width: initial;
+    margin: auto;
+    padding: 3rem;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "SOV1 SOV2 SOV3"
+      "SOV4 SOV2 SOV6"
+      "SOV4 SOV5 SOV6";
+  }
+
+  .cards div:nth-child(1) {
+    grid-area: SOV1;
+  }
+
+  .cards div:nth-child(2) {
+    grid-area: SOV2;
+  }
+
+  .cards div:nth-child(3) {
+    grid-area: SOV3;
+  }
+
+  .cards div:nth-child(4) {
+    grid-area: SOV4;
+  }
+
+  .cards div:nth-child(5) {
+    grid-area: SOV5;
+  }
+
+  .cards div:nth-child(6) {
+    grid-area: SOV6;
+  }
+
+  footer {
+    grid: C;
   }
 }
