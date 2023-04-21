@@ -24,8 +24,6 @@ Learned concepts:
 
 - CSS colors
 
-- Form
-
 - Mobile first rule
 
 - Responsiveness
