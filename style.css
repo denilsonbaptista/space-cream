@@ -160,7 +160,7 @@ footer a {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1024px) {
   .page {
     min-height: 100vh;
 
@@ -178,8 +178,6 @@ footer a {
     padding: 3.2rem 0 3rem;
 
     grid-area: A;
-
-    min-height: 100vh;
   }
 
   header img {
@@ -213,11 +211,12 @@ footer a {
 
   .cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
-      "SOV1 SOV2 SOV3"
-      "SOV4 SOV2 SOV6"
-      "SOV4 SOV5 SOV6";
+      "SOV1 SOV2"
+      "SOV4 SOV2"
+      "SOV4 SOV3"
+      "SOV5 SOV6";
   }
 
   .cards div:nth-child(1) {
@@ -246,5 +245,16 @@ footer a {
 
   footer {
     grid: C;
+  }
+}
+
+@media (min-width: 1440px){
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "SOV1 SOV2 SOV3"
+      "SOV4 SOV2 SOV6"
+      "SOV4 SOV5 SOV6";
   }
 }
