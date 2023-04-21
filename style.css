@@ -16,13 +16,13 @@
 
   /* Colors */
   --hue: 250;
-  --bg-primary: hsl(232, 100%, 97%);
-  --bg-secundary: hsl(218, 17%, 62%);
-  --bg-heading-primary: hsl(275, 18%, 79%);
-  --bg-heading-secundary: hsl(312, 91%, 96%);
-  --fc-heading-primary: hsl(0, 0%, 100%);
-  --fc-heading-secundary: hsl(232, 17%, 35%);
-  --fc-texting-primary: hsl(274, 84%, 12%);
+  --bg-primary: hsl(var(--hue), 100%, 97%);
+  --bg-secundary: hsl(var(--hue), 17%, 62%);
+  --bg-heading-primary: hsl(var(--hue), 18%, 79%);
+  --bg-heading-secundary: hsl(var(--hue), 91%, 96%);
+  --fc-heading-primary: hsl(var(--hue), 0%, 100%);
+  --fc-heading-secundary: hsl(var(--hue), 17%, 35%);
+  --fc-texting-primary: hsl(var(--hue), 84%, 12%);
 }
 
 body {
