@@ -127,6 +127,8 @@ footer {
   color: var(--fc-heading-secundary);
 
   margin: 3rem 0;
+
+  opacity: 0;
 }
 
 footer a {
@@ -245,6 +247,8 @@ footer a {
 
   footer {
     grid: C;
+
+     opacity: 1;
   }
 }
 
